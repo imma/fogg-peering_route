@@ -4,8 +4,8 @@ function version {
   local shome="$(cd -P -- "${BASH_SOURCE%/*}/.." && pwd -P)"
   source "$shome/script/profile"
 
-  local ver_fogg_peer="0.0.1"
-  jq -n --arg fogg_peer "$ver_fogg_peer" '{fogg_peer: $fogg_peer}'
+  local ver_fogg_peering_route="0.0.1"
+  jq -n --arg fogg_peering_route "$ver_fogg_peering_route" '{fogg_peering_route: $fogg_peering_route}'
 }
 
 version "$@"
